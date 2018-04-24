@@ -16,7 +16,7 @@
             </span>
           </div>
           <div id="navbarMenuHeroC" class="navbar-menu">
-            <hero-nav></hero-nav>
+            <header-nav></header-nav>
           </div>
         </div>
       </header>
@@ -35,26 +35,37 @@
     </div>
 
     <!-- Hero footer: will stick at the bottom -->
-    <div class="hero-foot">
-      <hero-tab></hero-tab>
+    <div class="hero-foot" v-if="this.isTabVisible">
+      <header-tab></header-tab>
     </div>
   </section>
   
   <section class="section">
     <div class="container">
-      <router-view></router-view>
+      <router-view :key="$route.path"></router-view>
     </div>
   </section>
+
+  <footer class="footer">
+    <div class="container has-text-centered">
+      Copyright &copy; 2018 by Arief Adjie Wicaksono. Made with Vue and Love.
+    </div>
+  </footer>
   
   </div>
 </template>
 <script>
-  import HeroNav from "./components/Nav";
-  import HeroTab from "./components/Tab";
+  import HeaderNav from "./components/Nav";
+  import HeaderTab from "./components/Tab";
 export default{
+  data() {
+    return {
+      isTabVisible : true,
+    }
+  },
   components : {
-    HeroNav,
-    HeroTab
+    HeaderNav,
+    HeaderTab
   }
 }
 </script>

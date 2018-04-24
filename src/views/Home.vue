@@ -1,9 +1,9 @@
 <template>
-  <div class="columns">
-    <div class="column is-one-third"  v-for="place in places" v-bind:key="place.id">
+  <div class="columns is-multiline">
+    <div class="column is-4-desktop is-6-tablet is-12-mobile" v-for="place in places" v-bind:key="place.id">
       <div class="card">
         <div class="card-image">
-          <figure class="image is-4by3">
+          <figure class="image">
             <img :src="place.img_cover" alt="Placeholder image">
           </figure>
         </div>
