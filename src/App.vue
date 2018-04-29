@@ -48,7 +48,7 @@
 
   <footer class="footer">
     <div class="container has-text-centered">
-      Copyright &copy; 2018 by Arief Adjie Wicaksono. Made with Vue and Love.
+      Copyright &copy; 2018 by Arief Adjie Wicaksono. Made with <i class="fa fa-heart has-text-danger"></i> and Vue.
     </div>
   </footer>
   

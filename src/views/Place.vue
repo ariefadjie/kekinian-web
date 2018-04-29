@@ -12,7 +12,6 @@ export default {
         name : '',
         description : '',
       },
-      isTabVisible : false, 
     }
   },
   created()
